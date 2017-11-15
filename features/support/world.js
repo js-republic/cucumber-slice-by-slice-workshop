@@ -12,16 +12,12 @@ class World {
     this.calc.clearCalculator();
   }
 
-  setArguments(arg1, arg2) {
-    this.calc.setArguments(arg1, arg2);
+  add(arg) {
+    this.calc.add(arg);
   }
 
-  add() {
-    this.calc.add();
-  }
-
-  substract() {
-    this.calc.substract();
+  substract(arg) {
+    this.calc.substract(arg);
   }
 
   result(){
