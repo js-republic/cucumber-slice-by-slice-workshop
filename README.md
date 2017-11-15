@@ -74,7 +74,6 @@ The tutorial is split into three stages. Each builds on the former and adds more
 ```
 cucumber-slice-by-slice/
 |- features/             # cucumber.js *.feature files (gherkin syntax)
-   |- step_definitions/  # cucumber.js step definitions
    |- support/           # cucumber.js World definition + step definitions
 |- models/               # the code for the "calculator system". The actual system code to be tested
 |- app.js                # ordinarily the main file for a Node.js project (unused in TuteCumber)
