@@ -17,7 +17,15 @@ class World {
   }
 
   add() {
-    return this.calc.add();
+    this.calc.add();
+  }
+
+  substract() {
+    this.calc.substract();
+  }
+
+  result(){
+    return this.calc.result();
   }
 
   doBeforeScenario() {
