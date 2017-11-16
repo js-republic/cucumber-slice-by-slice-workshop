@@ -14,13 +14,13 @@ class World {
 
   add(arg) {
     this.calc.add(arg);
+    return this;
   }
 
   substract(arg) {
     this.calc.substract(arg);
   }
-
-  result(){
+  result() {
     return this.calc.result();
   }
 
