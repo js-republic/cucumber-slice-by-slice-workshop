@@ -7,19 +7,27 @@ Given("the calculator is clear", function() {
 });
 
 When("I add {int} and {int}", function(arg1, arg2) {
-  //Write code here that turns the phrase above into concrete actions
-  this.setArguments(arg1, arg2);
-  this.add();
+  this.add(arg1).add(arg2);
 });
 
 When("I subtract {int} from {int}", function(arg1, arg2) {
-  // we deliberately switch arg2 and arg1 here because of the order of operation
-  // arg1 subtracted from arg2, so "arg2 minus arg1"
-  this.setArguments(arg2, arg1);
-  this.substract();
+  this.substract(arg1).add(arg2);
 });
 
-Then("the result should be {int}", function(arg1) {
+When("then add {int}", function(arg) {
+  this.add(arg);
+});
+
+When("then subtract {int}", function(arg) {
+  this.substract(arg);
+});
+
+When("the calculator is cleared", function() {
   // Write code here that turns the phrase above into concrete actions
-  expect(this.result()).to.eql(arg1);
+  this.clearCalculator();
+});
+
+Then("the result should be {int}", function(arg) {
+  // Write code here that turns the phrase above into concrete actions
+  expect(this.result()).to.eql(arg);
 });

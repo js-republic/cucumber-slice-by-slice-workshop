@@ -1,24 +1,17 @@
 module.exports = class Calc {
-  constructor() {
-    this._arg1 = 0;
-    this._arg2 = 0;
-  }
+
+  constructor() { }
 
   clearCalculator() {
     this.currentSum = 0;
   }
 
-  setArguments(arg1, arg2) {
-    this._arg1 = arg1;
-    this._arg2 = arg2;
+  add(arg) {
+    this.currentSum += arg;
   }
 
-  add() {
-    this.currentSum = this._arg1 + this._arg2;
-  }
-
-  substract() {
-    this.currentSum = this._arg1 - this._arg2;
+  substract(arg) {
+    this.currentSum -= arg;
   }
 
   result() {
