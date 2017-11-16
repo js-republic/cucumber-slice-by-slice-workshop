@@ -1,11 +1,11 @@
 module.exports = class Calc {
 
   constructor() {
-    this._currentSum = 0;
+    this.currentSum = 0;
   }
 
   clearCalculator() {
-    this._currentSum = 0;
+    this.currentSum = 0;
   }
 
   add(arg) {
@@ -17,6 +17,6 @@ module.exports = class Calc {
   }
 
   result() {
-    return this._currentSum;
+    return this.currentSum;
   }
 };
