@@ -1,4 +1,7 @@
 # Cucumber Slice by Slice
+
+[![CircleCI](https://circleci.com/gh/js-republic/cucumber-slice-by-slice.svg?style=svg)](https://circleci.com/gh/js-republic/cucumber-slice-by-slice)
+
 A Cucumber.js Tutorial and example project. Uses [Cucumber.js](https://github.com/cucumber/cucumber-js) (obviously) in a [Node.js](http://nodejs.org/) environment. Explores [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) in general.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
