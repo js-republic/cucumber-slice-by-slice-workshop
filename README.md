@@ -267,3 +267,11 @@ What is interesting in this final stage is that the final set of features, once 
 
 ## Final Comments
 One thing that makes it interesting (to me), and what I've tried to demonstrate here, is that we can see how the system being tested becomes more sophisticated as more features are added. I don't just mean that it becomes more complex, that more code is added, I mean that adding more feature specs forces (or at least strongly encourages) us to write a system that evolves quickly to approximate what we think the final system should look like.
+
+
+## Launch all Cucumber tests with Nightwatch
+	npm i
+	npm install selenium-standalone@latest -g // We install with node.js the selenium server
+	selenium-standalone install
+	selenium-standalone start // We start the selenium server. To be keeped open to launch tests
+	node_modules/.bin/nightwatch
